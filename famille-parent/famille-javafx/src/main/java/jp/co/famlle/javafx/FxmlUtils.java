@@ -10,8 +10,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -46,7 +44,7 @@ public class FxmlUtils {
         stage.setTitle(title);
 
         // シーンを設定する
-        stage.setScene(new Scene(root));
+        stage.setScene(new DefaultScene(root));
 
         return stage;
     }
